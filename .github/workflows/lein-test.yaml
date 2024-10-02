@@ -4,10 +4,8 @@ on:
   workflow_dispatch:
   push:
     branches: main
-    paths: ['src/**','test/**']
   pull_request:
     types: [opened, reopened, edited, synchronize]
-    paths: ['src/**','test/**']
 
 env:
   JDBCUTIL_DBNAME: //127.0.0.1:5432/jdbc_util_test
